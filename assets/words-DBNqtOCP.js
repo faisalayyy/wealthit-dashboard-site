@@ -1,1 +1,0 @@
-var e=(e,t,n=`${t}s`)=>`${e} ${Math.abs(e)===1?t:n}`;export{e as t};

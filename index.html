@@ -1,23 +1,39 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://wealthit-api.onrender.com https://open.er-api.com; frame-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests" />
     <meta charset="UTF-8" />
-    <meta name="referrer" content="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="referrer" content="no-referrer" />
     <meta name="theme-color" content="#0B0B0C" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#F5F5F3" media="(prefers-color-scheme: light)" />
-    <meta name="description" content="Wealthit on the web: your wallets, records and plans, in step with the app." />
-    <!-- the bare mark, with no ground: the SVG follows the tab strip's theme, the PNGs are a light tile. Chrome, Edge and Firefox play the opening in it when the page loads (src/shared/ui/brandFavicon.ts); Safari keeps these files -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <title>Wealthit</title>
-    <script type="module" crossorigin src="/assets/index-HcItWoho.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/Surface-DU-cwgRL.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-Dm9soPxc.css">
+    <style>
+      :root { --bg: #F5F5F3; --fg: #0B0B0C; --muted: #5d5d58; color-scheme: light; }
+      @media (prefers-color-scheme: dark) { :root { --bg: #0B0B0C; --fg: #F5F5F3; --muted: #a3a39c; color-scheme: dark; } }
+      * { box-sizing: border-box; }
+      html, body { height: 100%; margin: 0; }
+      body {
+        background: var(--bg); color: var(--fg);
+        font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        display: grid; place-items: center; padding: 24px max(16px, env(safe-area-inset-left, 0px));
+      }
+      main { max-width: 26rem; text-align: center; display: grid; gap: 14px; justify-items: center; }
+      img { width: 56px; height: 56px; }
+      h1 { font-size: 1.5rem; line-height: 1.25; margin: 6px 0 0; text-wrap: balance; }
+      p { margin: 0; color: var(--muted); }
+      a { color: var(--fg); font-weight: 600; }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <main>
+      <img src="/favicon.svg" alt="Wealthit" />
+      <h1>Wealthit on the web is coming soon</h1>
+      <p>Until then, Wealthit is on iPhone and Android. Your records are safe and stay in step on your phone.</p>
+      <p><a href="https://wealthit.app">wealthit.app</a></p>
+    </main>
   </body>
 </html>
